@@ -1,0 +1,21 @@
+Fundamentos da linguagem JavaScript
+
+Variáveis: Em JavaScript, você pode declarar variáveis usando as palavras-chave var, let ou const. As variáveis são usadas para armazenar e manipular dados.
+
+Tipos de dados: JavaScript possui vários tipos de dados, incluindo números, strings, booleanos, arrays, objetos e muito mais. É uma linguagem de tipagem dinâmica, o que significa que você não precisa especificar explicitamente o tipo de uma variável.
+
+Operadores: JavaScript oferece operadores aritméticos, de comparação, lógicos, de atribuição e muito mais. Eles são usados para executar operações matemáticas, comparações e outras manipulações de dados.
+
+Estruturas de controle: Você pode usar estruturas de controle, como condicionais (if, else if, else), loops (for, while, do-while) e instruções de controle (break, continue), para controlar o fluxo de execução do seu código.
+
+Funções: JavaScript permite a definição de funções reutilizáveis. Você pode criar funções para executar tarefas específicas e chamá-las posteriormente no seu código.
+
+Manipulação do DOM: O Document Object Model (DOM) é uma representação em árvore de uma página HTML. Com JavaScript, você pode interagir com o DOM para acessar, modificar e manipular elementos HTML, estilos, eventos e muito mais.
+
+Tratamento de eventos: JavaScript permite a captura e manipulação de eventos, como cliques do mouse, pressionamentos de teclas e movimentos do mouse. Você pode associar funções a eventos específicos e executar ações com base nesses eventos.
+
+Parei na parte 29:54 do curso de JavaScript do telegram 
+
+Estruturas de dados 
+
+A estruturas de dados visa organizar e deixa em ordem algum tipo de dados de uma forma eficiente para que esses dados possar ser manipulados,exemplos de estruturas de dados Array,Listas e etc... 

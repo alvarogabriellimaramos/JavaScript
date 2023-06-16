@@ -1,0 +1,13 @@
+
+Visão geral do JavaScript
+
+O JavaScript foi criado por Brendan Eich enquanto ele trabalhava na Netscape Communications Corporation, atualmente conhecida como Mozilla Corporation. A linguagem foi desenvolvida em um período muito curto, em apenas 10 dias, durante o mês de maio de 1995.
+
+A Netscape estava desenvolvendo o Netscape Navigator, um dos primeiros navegadores populares da internet naquela época. Eich foi contratado pela empresa para criar uma linguagem de programação que pudesse ser executada diretamente no navegador e fornecesse interatividade às páginas da web.
+
+Originalmente, a linguagem foi chamada de "Mocha", mas depois foi renomeada para "LiveScript" e finalmente para "JavaScript". O nome "JavaScript" foi escolhido principalmente por razões de marketing, aproveitando o sucesso e a popularidade da linguagem Java na época.
+
+JavaScript foi projetado como uma linguagem de script leve e interpretada, voltada para programação do lado do cliente, ou seja, executada diretamente no navegador do usuário. Ela foi criada para adicionar recursos interativos e dinâmicos às páginas da web, permitindo que os desenvolvedores manipulassem o conteúdo, o estilo e o comportamento dos elementos da página.
+
+Com o tempo, o JavaScript evoluiu e se tornou uma linguagem de programação completa, amplamente utilizada tanto no desenvolvimento front-end quanto no back-end. Além disso, o JavaScript agora é suportado por todos os principais navegadores e possui uma grande comunidade de desenvolvedores, juntamente com uma ampla variedade de bibliotecas e frameworks que tornam o desenvolvimento web mais eficiente e poderoso.
+

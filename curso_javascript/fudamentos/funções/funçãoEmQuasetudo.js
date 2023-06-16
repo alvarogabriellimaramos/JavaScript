@@ -1,0 +1,2 @@
+// Funções em javascript são blocos de nomeados códigos reutilizável que é projetado para realizar uma tarefa específica,dentro de uma função pode ter loops,variaveeis,condicionais e etc..As funções podem ter um return(retorna um valor ) mas isso é opcional 
+console.log(typeof Object)

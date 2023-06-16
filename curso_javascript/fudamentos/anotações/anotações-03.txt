@@ -1,0 +1,3 @@
+Tipagem Fraca 
+
+a tipagem fraca é uma forma flexivel utilizada por grandes partes das linguagens de programação,ela permitir alterar variavel de valor numerico e mas tarde alterar para um valor tipo string,sem receber nenhum erro por isso,mas a uma desvatagem,as linguagens de tipagem fraca são dificeis de  alguns tipos de erros detectar erros e são mais dificeis de depurar,por isso deve-se ter mais alteção quando for programar em uma linguagem de tipagem fraca,mas a linguagem de tipagem dinamica oferece uma maior flexibilidade 
