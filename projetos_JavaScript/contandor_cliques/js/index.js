@@ -12,8 +12,7 @@ btn_button.addEventListener('click',function(){
     {
         duration: 500
     }
-)
-   
+)  
 })
 const btn_reset_button = document.getElementById('btn-reset')
 btn_reset_button.addEventListener('click',() => {

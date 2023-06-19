@@ -1,0 +1,98 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #410c25;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.strong{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    font-size: 1.3em;
+}
+.container{
+    position: relative;
+    background-color: #7c0426;
+    max-width: 30vw;
+    min-width: 400px;
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+}
+.span-altura{
+    position: absolute;
+    top: 26%;
+    right: 72.5%;
+    transform: translate(10%,-26%);
+}
+.span-peso{
+    position: absolute;
+    top: 49%;
+    right: 75%;
+    transform: translate(15%,30%);
+}
+.container .input{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ecca56;
+    color: white;
+}
+
+.container .btn{
+    position: absolute;
+    border: none;
+    left: 90%;
+    transform: translate(-90%);
+    padding: 10px;
+    background-color:rgb(253, 36, 36);
+    width: 150px;
+    cursor: pointer;
+    color: white;
+}
+.container .btn-1{
+    position: absolute;
+    left: 25%;
+    margin-right:20px;
+    transform:translate(-25%);
+    border: none;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    background-color: #ff5d3b;
+}
+@media screen and (min-height:900px) {
+    .container{
+        max-height: 40%;
+        min-height: 400px;
+        max-width: 20%;
+    }
+    .container .span-altura{
+        position: absolute;
+        top: 37%;
+        transform: translate(0,-38%);
+    }
+    
+}
