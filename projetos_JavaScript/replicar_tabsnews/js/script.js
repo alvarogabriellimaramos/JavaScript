@@ -14,7 +14,7 @@ lua.addEventListener('click',function(){
     hr.style.opacity = '0.1 white'
     main.style.boxShadow = '0 0 0 0.1px white'
     const img = document.createElement('img')
-    img.src = 'https://www.pngmart.com/files/3/Sunshine-PNG-Photo.png'
+    img.src = 'https://icones.pro/wp-content/uploads/2021/04/symbole-du-soleil-jaune.png'
     img.alt = 'Icone Sol'
     li_1.appendChild(img)
     img.style.width = '18px'
