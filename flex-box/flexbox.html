@@ -1,0 +1,50 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            color: white;
+            text-align:center;
+            background-color: blue;
+            font-size: 1.2em;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            height: 50%;
+            align-items: center;
+        }
+        .quadrado{
+            height: 100px;
+            width: 10%;
+            background-color: red;
+            border: 1px solid black;
+            transition: 1s;
+        }
+        .quadrado:hover{
+            flex-grow: 0.5;
+        }
+    </style>
+    <title>FlexBox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quadrado" id="1">1
+            <div id="div-txt">
+
+            </div>
+        </div>
+        <div class="quadrado">2</div>
+        <div class="quadrado">3</div>
+        <div class="quadrado">4</div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>
