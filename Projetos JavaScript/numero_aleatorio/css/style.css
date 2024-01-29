@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 2, 30);
+}
+.container{
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    background-color: #1f1a38;
+    max-width: 40%;
+    min-width: 400px;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+}
+.container .div-input{
+    display: inline-block;
+}
+.div-input .strong{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translate(-50%,-50%);
+}
+.div-input input{
+    display: inline-flex;
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    margin: auto;
+    border-bottom: 1.5px solid blue;
+}
+.div-input .btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translate(50%,20%);
+    width: 60%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    
+    background-color: #0850b6;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.div-input .div-txt{
+    position: absolute;
+    text-align: center;
+    margin: 10px;
+    left: 50%;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    transform: translate(-60%);
+}
+@media  screen and (min-width:200px) and (max-width:1050px){
+    .strong{
+        text-align: center;
+    }
+    .div-input .input{
+       display:flex;
+       margin: 10px;
+       border-bottom: 1px solid blue;
+       align-items: center;
+       justify-content: center;
+    }
+    .div-input .div-txt{
+        position: absolute;
+        bottom: 8%;
+        transform: translate(-50%,50%);
+    }
+}
+

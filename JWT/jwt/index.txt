@@ -1,0 +1,29 @@
+JWT é forma padrão de autenticação e troca de informações seguras,nele é possivel armazena de forma segura e compacta objetos JSON,o JWT utiliza a codificação Base64 para a codificação do token,esse token pode ser assinado utilizando uma especie de senha 
+
+Quando usa o JWT: 
+1- o jwt é muito utilizando em autorizações,principalmente em autorizações de rotas,por exemplo,podemos bloquear rotas,para que só os usuarios logados possa acessa-las,não só rotas,mas outros serviços etc..
+
+2 - Podemos usa o jwt em troca de informações,pois como a assinatura é via token isso deixa as trocas de informações mais seguras 
+
+o que irá diferencia um token de uma aplicação para outra aplicação sera o 'segredo' 
+
+o jwt é recurso para AUTORIZAÇÃO, e não para autenticação ou na aplicação irá ter recurso que so podera ser acessado ser o usuario estiver autenticado,se ele estiver,então o usuario será autorizado a acessa esses serviçoes e recursos,caso o contrario o acesso será negado
+
+o token jwt é dividido por pontos e as informações do usuario são contidas no token,especificadamente na parte de payload
+
+
+criado um token no nodejs 
+
+const token = jwt.sign({id:1,user:'alvinho'},SECRET,{expiresIn: '300'}) 
+
+// essa é a maneira de gera um token o primeiro parametro vai ser as informações guardas do usuario o segundo a chave secreta e o terceiro o tempo de expiração do token
+
+no postaman podemos criar váriaveis para caso o endereço ou dominio muda,não temos tantos problemas nas requisções
+
+Como criar uma váriavel no postaman ?
+
+1 - Primeiro achamamos a opção 'Variables' 
+
+2 - Depois que encontramos irá ter três parametros, o nome da váriavel e os outros dois serão qual será o dominio da váriavel
+
+3 - Acessando a variavel,para acessamos a váriavel colocamos ela entre paranteses,por exemplo ((url)) 

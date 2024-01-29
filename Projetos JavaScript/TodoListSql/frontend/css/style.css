@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+    background-color: #0ffff8;
+}
+.container{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    background-color: white;
+    padding: 3vh;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+.container form {
+    width: 100%;
+}
+.container form input{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    font-size: 1.1em;
+    border: none;
+    background-color: #00f9ff;
+}
+.container table input{
+    padding: 5px;
+    font-size: 1.1em;
+    margin: 5px;
+    outline: none;
+    background-color: #0ffff8;
+    border: none;
+    border-radius: 5px;
+}
+.container table button{
+    padding: 5px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    background-color: #f569c4;
+    color: white;
+    border-radius: 5px;
+}
+.container form button{
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    background-color: #f569c4;
+    color: white;
+    cursor: pointer;
+}
+.container table{
+    border-collapse: collapse;
+    font-size: 1.1em;
+}
+.container table th,td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}

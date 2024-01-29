@@ -1,0 +1,6 @@
+Para saber mais em detalhes sobre o modulo http do nodejs acesse o site 
+https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module-pt
+
+// caso ter algum dúvida sobre cors 
+
+https://www.youtube.com/watch?v=Fha6Il-5RYE

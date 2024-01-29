@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    padding: 4vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+form .erro-email,.erro-senha,
+.erro-senha-2 {
+   font-size: 14px;
+   color: rgb(199, 4, 4);
+   display: none;
+}
+form .correct-email,.correct-password,.correct-password-2{
+    font-size: 14px;
+    color: green;
+    display: none;
+}
+form input{
+    padding: 10px;
+    border: 1px solid #b3b2b2;
+    outline: none;
+    font-size: 1.1em;
+    border-radius: 20px;
+}
+form input:focus{
+    box-shadow: 0 0 15px #ccc;
+}
+form button{
+    padding: 10px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #20a1d8;
+    border: none;
+    cursor: pointer;
+}

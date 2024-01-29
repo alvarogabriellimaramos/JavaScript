@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header{
+    background-color: #50001d;
+    position: fixed;
+    height: 100vh;
+    padding: 1.2vh;
+    font-family: 'Roboto',sans-serif;
+    border-right: 1px solid rgba(255, 255, 255, 0.457);
+}
+header .text-blog{
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+}
+header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100vh;
+    justify-content: space-around;
+}
+header ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 15px;
+    font-size: 1.2em;
+    color: #5564b2;
+    padding: 5px;
+    transition: .3s;
+}
+header ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+header ul li .cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+header ul li .cont .img {
+    color: white;
+    font-size: 1.8em;
+    border-right: 1px solid white;
+    padding: 5px;
+}
+header ul li .cont .username{
+    color: white;
+    font-size: 1.3em;
+}

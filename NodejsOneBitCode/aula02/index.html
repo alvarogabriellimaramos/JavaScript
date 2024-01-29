@@ -1,0 +1,25 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando middleware</title>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <button>Envia</button>
+    </form>
+    <script>
+        const form = document.querySelector('form');
+        const input = document.querySelector('input');
+        form.addEventListener('submit',event => {
+            event.preventDefault();
+            fetch('http://localhost:8082/',{
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify( {name: input.value} )
+            }).then(async res => console.log(await res.json()))
+        })
+    </script>
+</body>
+</html>

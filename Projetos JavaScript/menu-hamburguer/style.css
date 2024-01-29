@@ -1,0 +1,146 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    max-width: 100%;
+    min-width: 400px;
+}
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+header .nav-1 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.nav-1 .ul-1 {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    gap: 10px;
+}
+.ul-1 li {
+    margin: 10px;
+}
+.ul-1 a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.ul-1 a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 0.3s;
+}
+.ul-1 a:hover::before{
+    width: 100%;
+}
+.ul-1 a:hover{
+    opacity: 0.5;
+}
+.nav-2 {
+    position: absolute;
+    top: -180px;
+    display: none;
+}
+header .btn{
+    display: none;
+}
+@media (max-width:680px){
+    header .nav-1{
+        display: none;
+    }
+    header .nav-2{
+        position: fixed;
+        right: 0;
+        top: 0%;
+        display:none;
+        width: 27%;
+        align-items: center;
+        background-color: black;
+        border-bottom-left-radius:10px ;
+        padding: 5vh;
+        animation: nav-animation 1s;
+    }
+    .nav-2 button{
+        position: absolute;
+        top: 5%;
+        left: 6%;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .nav-2 ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .nav-2 li {
+        margin: 10px;
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .nav-2 a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        transition: 0.3s;
+    }
+    .ul-2 a:hover{
+        opacity: 0.5;
+    }
+    header .btn{
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        transition: 0.3s;
+    }
+    .btn:hover{
+        opacity: 0.6;
+    }
+    .btn hr {
+        width: 20px;
+        margin: 5px;
+    }
+
+}
+@keyframes nav-animation {
+    0%{
+        width: 0;
+        min-width: 0;
+        right: -10%;
+        opacity: 0;
+        
+    }
+
+    100%{
+        width: 27%;
+        right: 0;
+        opacity: 1;
+    }
+}

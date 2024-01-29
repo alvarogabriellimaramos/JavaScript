@@ -1,0 +1,3 @@
+As referencias no mongodb trata-se de utilizar o objectID de um documento em outro documento com uma coleção toltamente diferente,isso irá criar uma conexão entre ambos os documentos,isso irá criar relações mais complexas e seguras entre os dados 
+
+As referencias trás uma série de vantagens mas a mais comum é conectar documentos de coleções diferentes em outros documentos com coleções diferentes,por exemplo digamos que eu tenha uma coleção e-mail e uma coleção usuario,cada usuario irá ter um e-mail então para referencia esse e-mail dos usuario nós colocamos as referencias desse email,o objectID

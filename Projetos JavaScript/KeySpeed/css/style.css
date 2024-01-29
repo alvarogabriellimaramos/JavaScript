@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    color: white;
+}
+.container strong{
+    font-size: 1.3em;
+}
+.container form input{
+    padding: 10px;
+    width: 320px;
+    font-size: 1.3em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid blue;
+    outline: none;
+    color: white;
+}
+span{
+    position: absolute;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transition: .2s;
+}
+.score{
+    position: absolute;
+    border:1px solid yellow;
+    top: 5px;
+    border-radius: 5px;
+    padding: 1.5vh;
+    font-size: 1.2em;
+    color: white;
+}
+.time{
+   
+    position: absolute;
+    left: 0;
+    background-color: blue;
+    height: 1px;
+    top: 100px;
+}
+.game-over{
+    border: 1px solid white;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.game-over div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.game-over button{
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.game-over #yes{background-color: green; }
+.game-over #no{background-color: red;}

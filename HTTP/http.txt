@@ -1,0 +1,29 @@
+ o método http funciona da seguinte forma: o cliente ou usuario irá envia uma solicitação ou uma http request,o servidor irá processa essa request e irá envia um http response,transferido os dados dentro do servidor de volta para o cliente 
+
+// Métodos mais comum http 
+
+( 1 ) - Método get: esse método é reponsável por fazer uma requsição que irá apenas consumir informações,esse método é muito utilizado em consumo de apis  
+( 2 ) - Método post: esse método é utilizado para envia alguma informação para o servidor,por exemplo digamos temos um novo usuário na nossa aplicação,o método post é reponsável por envia esse novos dados para o servidor 
+( 3 ) - Método put:esse método é utilizado para fazer alguma alteração em uma ou várias informações,por exemplo,digamos que queremos altera nosso nome de usuário,o método put ficara responsável por fazer isso,e irá envia o novo nome de usuario para o servidor 
+( 4 ) - Método delete:esse método é reponsável por excluir alguma ou várias informações do servidor 
+
+// Header http,alguns dos mais comum 
+
+( 1 ) - Content-Type: Esse header irá dizer qual será o tipo de contéudo do nosso servidor,que estámos enviado ou recebendo 
+
+( 2 ) - Metédos: qual é o tipo de método do nosso servidor,se é get,post e etc..
+
+( 3 ) - Access-Control-Allow-Origin: Este cabeçalho define quais origens (dominios ) tem permissão de acessar os recursos do servidor.Ele é enviando pelo servidor como parte da resposta http
+
+( 3 ) - Como funciona o Acess-Control-Allow-Origin:Quando o cliente faz uma requisição ao servidor em um domino diferente,ele incluir o cabeçalho 'origin' indicando de onde veio o a requsição,como a solicitação é em um dominio diferente na maioria dos casos,ele irá nega a solicitação.O servidor por sua vez verifica se o cabeçalho origin é permitido,se for ele irá responde com o cabeçalho Acess-Control-Allow-Origin,contendo o valor do dominio permitido para fazer a requsição no nosso servidor 
+
+( 3 ) - Valores possiveis: '*' o Asterisco irá dizer ao servidor que todos os dominio e origem diferentes da origem do servidor,tem acesso aos recurso enviado pelo back-end,permitir que qualquer origem acesse os recursos enviado pelo servidor
+
+( 3 ) - Podemos também coloca algum dominio especifico,em forma de dizer que apenas aquele dominio terá acesso aos recurso do servidor,os outros dominio não terão acesso,acesse o arquivo head.js para entende melhor
+
+( 3 ) - Lembrando que permitir acesso de outras origens desconhecidas podem ser relativamente perigoso,já que 
+qualquer pesssoa poderá ter acesso ao nosso servidor 
+
+( 3 ) - Quando estivemos fazendo requisições utilizando o fetch api ou axios,devemos configura o cors para permitir acesso ao back-end 
+( 3 ) - O prontocolo cors é algo que apenas o navegador verifica para manter o cliente em segurança 
+(CORS) - ross-origin Resource Sharing: Esse mecanismo é utilizado pelos navegadores,para compartilhamento de recursos,entre origens ou sites diferentes,quando estámos criando uma api,devemos configura corretamente o cabeçalho do servidor para permitir interações entre dominios diferentes,entre origens diferentes,para que assim o outro dominio que está tentando acessar nosso servidor ou api,não tenha problemas ao fazer uma requisição do tipo get,post e etc...

@@ -1,0 +1,13 @@
+o express é uma framework baseada em um padrão de projeto muito conhecido "Chain of Responsibility ",esse é um padrão comportamental que permite que uma solitação ou requisição http percorra uma serie de manipuladores,cada manipulado tem uma função ou ação especifica,eles decidem se irão processa os dados da solicitação ou se vão passa para o proximo manipulador.
+
+No contexto do nodejs e express os manipuladores são middlewares,os middlewares são funções que tem acesso aos objetos de request (requisição) response (resposta) e next(proxima função ou proximo middleware);
+
+Ententedo o Chain of Responsibility com middleware no express
+
+1 - Ordem de execução: Os middleware são executados de cima para baixo,ou seja eles serão executados na ordem que são definindos 
+
+2 - Manipulação de requisição: Cada middleware pode manipular a solicitação (request) de acordo com sua lógica,eles vão decidir se vão processa os dados,modifica o objeto de requisição,ou então passa o processo para proxima função 
+
+3 - Encademaneto de Middlewares: Se um middleware decide que a solicitação deve ser passada para o próximo middleare,ele chama a função next().Isso passa o controle para o próximo middleware na função
+
+Isso reflete o conceito de "Chain of Responsibility" no Express, onde os middlewares formam uma cadeia de manipuladores de solicitação, cada um responsável por uma parte  específica do processamento.

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+body {
+    background-color: #f1c2ff;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+    align-items:center;
+    justify-content: center;
+}
+main {
+    background-color: white;
+    padding: 1.3vh;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+main table{
+    width: 100%;
+    border-collapse: collapse;
+}
+main th,main td{
+    border:1px solid #ccc;
+    padding: 10px;
+    font-size: 1.1em;
+}
+button{
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:white;
+}
+main table .actions button{
+   margin: 5px;
+   padding: 6px;
+}
+main table .actions .edit{
+    background-color: #9e8ae7;
+}
+main table .actions .del{
+    background-color: brown;
+}
+main table .actions .check {
+    background-color: #40ba00;
+}
+main table .description input {
+    margin: 5px;
+    font-size: 1.1em;
+    padding: 5px;
+    outline: none;
+    background-color: #ffe2f4;
+    border: none;
+}
+main table .description input:focus{
+    outline: 1px solid blue;
+}
+main table .description button{
+    padding: 5px;
+    background-color: #5c92f9;
+}
+main  form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+main  form input{
+    width: 100%;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #0ffff7;
+}
+main form button {
+    background-color: #5c92f9;
+    padding: 5px;
+}
+.msg{
+    font-size: 1.4em;
+}

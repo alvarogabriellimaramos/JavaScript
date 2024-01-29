@@ -1,0 +1,50 @@
+[
+    {
+        "nome": "javascript",
+        "ano em que foi criada": 1996,
+        "Criador": "Brendan Eich",
+        "Descrição": "O javascript é uma linguagem de alto nivel,criada principalmente para desenvolvimento web,ela foi criada com foco em crianção de sites interativos,mas logo depois ela teria seu run time do lado do servidor que mas tarde ficaria conhecido como NodeJS",
+        "Extensão": "js/mjs",
+        "img": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+    },
+    {
+        "nome": "java",
+        "ano em que foi criada": 1995,
+        "Criador": "James Gosling",
+        "Descrição": "Java é um tipo de linguagem de programação criada e comercializada pela Sun Microsystems desde 1995. É definida como uma linguagem orientada a objetos. Sua intenção é permitir que os desenvolvedores escrevam o programa apenas uma vez e o executem por meio de qualquer dispositivo.",
+        "Extensão": "java",
+        "img": "https://cdn-icons-png.flaticon.com/512/226/226777.png"
+    },
+    {
+        "nome": "python",
+        "ano em que foi criada": 1989,
+        "Criador": "Guido van Rossum",
+        "Descrição": "O python é uma linguagem de programção feita para ser simples e facil de usar,mas não se engane apesar da sua simplicidade a linguagem python é muito poderosa,o python é utilizado em crianções de inteligencias artificiais,ciências de dados e etc...Hoje a linguagem python é umas das que mais cresce no mercado finaceiro",
+        "Extensão": "py",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+    },
+    {
+        "nome": "dart",
+        "ano em que foi criada": 2013,
+        "Criador": "Lars Bak e Kasper Lund",
+        "Descrição": "Dart é uma linguagem de programação criada pela google e foi criada com foco de substituir o JavaScript,ela foi feita para desenvolver aplicativos web,mobiles e de desktop com uma facilidade e flexibilidade extráodinaria,o dart utiliza umas das frameworks mais famosas do mundo,Flutter,flutter é uma framework focada 100% em interações client-side ou interações com o usuario ",
+        "Extensão": "dart",
+        "img": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/dart-programming-language-icon.png"
+    },
+    {
+        "nome": "julia",
+        "ano em que foi criada": 2009,
+        "Criador": "Jeff Bezanson, Stefan Karpinski, Viral B. Shah e Alan Edelman",
+        "Descrição": "A linguagem Julia foi criada em 2009, e ela foi feita com foco em atender requisitos de computação com altos desempenhos numeros e especificos,a linguagem também é muito utilizada para criar inteligencia artifical,mas também pode ser aplicada para criar aplicações mais comum (web/desktop/mobile)",
+        "Extensão": "jl",
+        "img": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_julia_icon_130496.png"
+    },
+    {
+        "nome": "csharp",
+        "ano em que foi criada": 2001,
+        "Criador": "Anders Hejlsberg",
+        "Descrição": "C# é uma linguagem de programação orientada a objetos e orientada a componentes. C# fornece construções de linguagem para dar suporte diretamente a esses conceitos, tornando C# uma linguagem natural para criação e uso de componentes de software.",
+        "Extensão": "cs",
+        "img": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png"
+    }
+]

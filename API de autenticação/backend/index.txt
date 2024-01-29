@@ -1,0 +1,31 @@
+Bycrypt é uma forma de armazena o hash da senha para deixa-las mais seguras a ataques de forças bruta. 
+
+const bc = require('bcrypt');
+
+const password = 'senha888';
+let hash = ''
+bc.hash(password,8,(err,has) => {
+    if (err) {
+        console.log('Erro')
+        return ;
+    }
+    hash += has;
+});
+// a função bc.hash() recebe três parametro
+
+// o primeiro é a senha que desejamos criptografa
+// o segundo será a quantidade de vezes que a senha passara pelo hash,quanto maior o numero maior sera a seguraça
+// o terceiro parametro será a callback que irá retorna um erro caso aconteça e irá retorna a hash
+
+
+ o que ainda falta para a conclusão da api ?
+
+1 - Falta fazer a validação do token nas rotas protegidas (feito)
+
+2 - Falta verifica se a senha digitada no login do usuario é a mesma salva no banco de dados (feito)
+
+3 - Quando o usuario tenta se registar,deve-se envia o token de autenticação para ele,quando ele usa esse na UI o registro do usuario deve ser salvo no banco de dados,para confirma que o e-mail é existente e não salva um usuario com um e-mail invalido.
+
+4 - Quando o usuario ser logar com seu e-mail e senha o token gerado deve-se salvo automaticamente no header de autorização,sem que o usuario precise ir no seu e-mail verifica novamente 
+
+5 - Caso o usuario esqueça a senha, e ele clique em 'recupera-senha',o email do usuario deve-se digitado,caso ele digite seu e-mail da forma correta um token de autorização será enviado para o usuario,para que ele consiga acessa a rota de recupera senha e assim faça o update da sua nova senha 

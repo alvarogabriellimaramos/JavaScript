@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: #f8efed;
+}
+h1{
+    margin-top: 4vh;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    background-color: white;
+    margin: 40px auto;
+    display: flex;
+    padding: 5vh;
+    border-radius: 20px;
+    box-shadow:  0 0 5px #ccc;
+    flex-direction: column;
+    gap: 20px;
+}
+.container form{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+form input{
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+    background-color: #e7c4ff;
+    outline: none;
+}
+form input:focus{
+    outline: 2px solid #c778fc;
+}
+form button{
+    padding: 10px;
+    width: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #340f17;
+    background-color: #ffd655;
+    font-weight: bold;
+    transition: .4s;
+}
+form button:hover{
+    color: white; 
+    background-color: #c7a842;
+}
+.container table{
+    width: 100%;
+    
+    border-collapse: collapse;
+}
+.container tr:nth-child(even){
+    background-color: #b8f1f9;
+}
+.container td,th{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+table button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    color: white;
+    transition: .4s;
+}
+table .check{
+    background-color: #94c31a;
+}
+table .check:hover,.delete:hover{
+    color: black;
+}
+table .delete{
+    background-color: #63341e;
+}
+.td-btns{
+    display: flex;
+    
+    justify-content: center;
+    gap: 10px;
+}
+.tr-complete{
+    opacity: 0.4;
+    cursor: auto;
+}
+.tr-complete button{
+    cursor: auto;
+}
+.tr-complete button:hover{
+    color: white;
+}
+td .complete{
+    display: none;
+    position: relative;
+    top: 5px;
+    color: green;
+    font-size: 2rem;
+}
+
+.inputDescription{
+    width: 60%;
+    
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    background-color: #e7c4ff;
+    font-size: 17px;
+    border-radius: 20px;
+}
+.buttonDescription{
+    padding: 10px;
+    background-color: #a42df3;
+    color: white;
+}
+
+@media (max-width:880px) {
+    body{
+        min-width: 600px;
+    }
+    td .check,.delete{
+        padding: 10px;
+    }
+    .container{
+        
+        min-width: 400px;
+        
+    }
+}

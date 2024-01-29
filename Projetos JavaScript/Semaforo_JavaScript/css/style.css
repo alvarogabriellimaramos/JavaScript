@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    width: 50px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px black;
+}
+.container div{
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+    border-radius: 50%;
+}
+.container .div-red{
+    background-color: #fa4343c9;
+}
+.container .div-yellow{
+    background-color: #fcfc53;
+}
+.container .div-green{
+    background-color: #278327;
+}
+

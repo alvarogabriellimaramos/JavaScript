@@ -1,0 +1,26 @@
+[
+    {
+        "Nome": "Alvaro",
+        "Idade": 18,
+        "Trabalhando":false,
+        "Linguagem de programação": "JavaScript"
+    },
+    {
+        "Nome": "Gabriel",
+        "Idade": 17,
+        "Trabalhando":false,
+        "Linguagem de programação": "Python"
+    },
+    {
+        "Nome": "Maria",
+        "Idade": 22,
+        "Trabalhando":true,
+        "Linguagem de programação": "Java"
+    },
+    {
+        "Nome": "Pedro",
+        "Idade": 25,
+        "Trabalhando":true,
+        "Linguagem de programação": "Csharp"
+    }
+]

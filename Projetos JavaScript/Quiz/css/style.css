@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: #f2d4ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.7em;
+    padding: 10px;
+}
+.container{
+    position: relative;
+    overflow:hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.time{
+    width: 0;
+    position: absolute;
+    left: 0;
+    background-color: darkgray;
+    height: 5px;
+}
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+.buttons button{
+    padding: 10px;
+    border: none;
+    font-size: 1.2em;
+    background-color: #e0dded;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition:.3s;
+}
+.buttons button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);
+}
+.score{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    gap: 15px;
+}
+.score strong{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.game-over{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    align-items: center;
+}
+.game-over div {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+.game-over span{
+    font-size: 1.2em;
+    background-color: #e0dded;
+    width: 60px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+.game-over span#yes{
+    background-color: rgb(6, 230, 6);
+    
+}
+.game-over span#no{background-color: red;}

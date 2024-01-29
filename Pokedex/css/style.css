@@ -1,0 +1,97 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: #111a35;
+    min-width: 100%;
+}
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+header form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    background-color: #f8bfed;
+    border-radius: 20px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    min-width: 400px;
+    flex-wrap: wrap;
+    background-color: #03cfcf;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    flex-direction: column;
+    background-color: #491416;
+    padding: 10px;
+    margin:50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px black;
+}
+.div-search{
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #320d12;
+    color: white;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vh;
+    border-radius: 20px;
+    width: 20%;
+    min-width: 280px;
+    font-size: 1.6rem;
+}
+.div-search .btn-close{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+}
+.div-shadow{
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+}

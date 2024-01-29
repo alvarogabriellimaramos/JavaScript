@@ -1,0 +1,1 @@
+Axios é um cliente http,ou seja irá envia solicitações ao servidor para que possamos acessa os dados que está dentro do servidor,o Axios é muito utilizando para fazer requisições do tipo get,mas também podemos utiliza o post,para enviar dados ao servidor

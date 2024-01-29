@@ -1,0 +1,66 @@
+O arquivo 'package.json' é um arquivo enssencial em projetos node e npm,ele desempenha vários papel importante,como a versão do projeto,as dependencias,a versão do projeto e muitas outras configurações importantes 
+
+// PARA QUE SERVER 
+
+O package.json contém informações descritivas sobre o projeto, como nome, versão, descrição, autor, licença, entre outros. Essas informações ajudam a identificar e documentar o projeto.
+// EXEMPLO 
+{
+  "name": "meu-projeto",
+  "version": "1.0.0",
+  "description": "Um projeto incrível",
+  "author": "Seu Nome",
+  "license": "MIT"
+}
+
+// GERENCIAMENTO E CONTROLE DE DEPENDECIAS 
+
+Uma das funcionalidades mais importantes é a capacidade de listar as dependências do projeto. Essas dependências são pacotes ou bibliotecas externas necessárias para a execução do código.
+
+// EXEMPLO 
+
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  }
+}
+
+// quando utilizamos npm install no nosso projeto,automaticamente essas dependecias,serão registrada no package.json,isso permite que quando outros devs forem clona o projeto,eles utilizem o npm install também,instalando assim as dependencias nécessarias
+
+// Execução de scripts e tarefas 
+
+O package.json permite a definição de scripts que podem ser executados usando o NPM. Isso é útil para automatizar tarefas comuns, como iniciar o servidor, executar testes, construir o projeto, entre outros
+// exemplo
+{
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha test/*.js",
+    "build": "babel src -d dist"
+  }
+}
+// Agora, você pode executar esses scripts usando npm run start, npm test, npm run build, etc.
+
+// Configurações Diversas 
+
+O package.json também pode conter várias configurações adicionais, como configurações específicas de ambiente, configurações de build, configurações de publicação e muito mais.
+
+{
+  "private": true,
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/meu-projeto.git"
+  }
+}
+
+Quando você instala uma nova dependência usando o comando npm install, o NPM adiciona automaticamente essa dependência ao seu arquivo package.json e também cria um arquivo package-lock.json para registrar as versões exatas instaladas.
+
+para salva uma biblioteca no package.json,temos que utiliza o comando npm i --save (nome do modulo)
+
+na versões da nossas dependecias teremos um ^,isso significa que apenas o numero do meio poderá se alterado 
+quando colocamos o ~ apenas o ultimo numero será modificado 
+
+Em resumo o package.json é um arquivo fundamental em projetos nodejs,ele server para compartilha nosso projeto com outro devs e implata-lo em servidores,ele server para genreciamento e construção da nossa aplicação 
+

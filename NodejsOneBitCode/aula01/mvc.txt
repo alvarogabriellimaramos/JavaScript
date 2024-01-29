@@ -1,0 +1,9 @@
+Arquitetura MVC: o MVC vem de Model-View-Controller,ele é utilizando no nosso código para separar as responsabilidades,onde cada modulo terá uma responsibilidade diferente 
+
+o MVC é dividido em três partes 
+
+1 - Model: responsável por lida com os dados,desde a sua leitura,armazenamento e validação 
+
+2 - View: é a parte de exibição de dados para o usuario 
+
+3 - controller: responsável por receber as requições dos usuarios na view e chamar o model correto.

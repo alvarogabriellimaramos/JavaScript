@@ -1,0 +1,81 @@
+O que é o react ? 
+o react é uma biblioteca javascript para lidar com interface de usuario (ui), o react surgiu em 2011 no Facebook 
+
+Características do React 
+1 - O react é uma biblioteca,não um framework 
+2 - é baseado em Components 
+3 - é usado para criar Spas
+
+o que são componetes ?
+Em react,os componetes são como pequenas parte de bloco de construção,onde podemos reutiliza esses blocos em qualquer lugar do nosso código,reutilizando código e deixado mais legivel,Existe dois tipo principais de componetes no react
+
+1 - Function Componets: componetes que são feito atráves de uma função,um componetes de função é uma função que recebe como parametro o props,'propriedade' como argumento,o objeto props é utilizando para passa dados de componotes pais para filho,por exemplo 
+
+Exemplo 1 {
+    // Componente pai
+    import React from 'react';
+    import MeuComponente from './MeuComponente';
+
+    function App() {
+    return (
+        <div>
+        <MeuComponente texto="Olá, mundo!" />
+        </div>
+        );
+    }
+
+    // codigo do arquivo componete filho 
+
+    import React from 'react';
+
+    function MeuComponente(props) {
+    return <div>{props.texto}</div>;
+    }
+}
+
+2 - Class Componets: componetes que são feito atráves de classes,os componetes que são feito atráves de classes,precisa estender de uma outra class,chamada React.component aqui está um exemplo 
+
+Exemplo 2 {
+    import React, { Component } from 'react';
+    class MeuComponente extends Component {
+     render() {
+        return <div>{this.props.texto}</div>;
+        }
+    }
+}
+
+em resumo os componetes são como pequenos blocos para montar um layout,quando criamos um componete não estamos criado uma tela inteira e sim apenas uma pequena parte de um componete maior 
+
+o que é JSX ? 
+
+O arquivo JSX (JavaScript XML) é uma extensão de sintaxe que permite escrever código React de forma mais concisa e legível. JSX é uma parte fundamental do desenvolvimento em React, pois facilita a descrição de interfaces de usuário usando uma sintaxe semelhante ao XML ou HTML, incorporada diretamente no JavaScript.
+
+Expressões JavaScript
+dentro do código JSX,podemos coloca dinamicamente expressões javascript utilizando {},isso permite que incluia variáveis e expressões javascript.
+
+exemplo {
+    const nome = "Alice";
+    const element = <p>Olá, {nome}!</p>;
+}
+
+Conversão para o javascript 
+
+O codigo JSX não pode ser entendido pelo browser,então o codigo jsx é convertido para código javascript em um processo chamado transpilação,isso normalmente é utilizado em ferramentas como o babel
+
+exemplo {
+    codigo jsx
+    const element = <h1>Olá, mundo!</h1>;
+
+    convertido para js 
+
+    const element = React.createElement('h1', null, 'Olá, mundo!');
+}
+
+
+Estrutura de pasta padrão do react 
+
+1 - Node_modules é onde irá fica todas as nossas dependecias node 
+
+2 - A pasta public ficara os elementos que será vizualizado pelo usuario
+
+Todas as vezes que fomos escreve uma tag jsx devemos importa o react 

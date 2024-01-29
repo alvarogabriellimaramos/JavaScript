@@ -1,0 +1,1 @@
+npm no javascript é uma sigla para (node package manage) é um pacote de bibliotecas prontas para serem utilizandas no nosso código,o npm também é muito utilizando para instalar bibliotecas que ainda não foram instalada no javascript 

@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "JavaScript",
+    "Alto Nivel": true,
+    "extensão": ".js .mjs .jsx"
+  },
+  {
+    "nome": "Python",
+    "Alto Nivel": true,
+    "extensão": ".py"
+  },
+  {
+    "nome": "Java",
+    "Alto Nivel": true,
+    "extensão": ".java"
+  }
+]

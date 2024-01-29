@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="http://localhost:8080/add" method="post">
+            <input type="text" placeholder="name" name="name" id="name">
+            <input type="text" placeholder="e-mail" name="email" id="email">
+            <button type="submit">Enviar</button>
+        </form>
+        <ul>
+
+        </ul>
+    </div>
+    <script>
+        const ul = document.querySelector('ul');
+        async function GetData (url) {
+            const data = await fetch(url);
+            return await data.json()
+        }
+        GetData('http://localhost:8080/').then(res => console.log(res))
+        .catch(e => console.log(e))
+    </script>
+</body>
+</html>

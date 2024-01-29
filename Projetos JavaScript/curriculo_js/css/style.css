@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: #181729;
+    border-radius:5px;
+    transition:1s;
+    padding: 8px;
+    margin: 10px;
+}
+button:hover{
+    background-color: blue;
+}
+hr{
+    margin: 5px;
+    width: 20px;  
+}
+.btn-txt{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    display: none;
+    animation: delay_btn 2s;
+    transition: 1;
+}
+@keyframes delay_btn{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+}
+ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 50px;
+}
+li {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition:1s;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.137);
+
+}

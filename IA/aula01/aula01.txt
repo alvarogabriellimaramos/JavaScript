@@ -1,0 +1,63 @@
+O que é uma inteligência Artificial ? 
+Geralmente ser define a inteligencia artifical com três categorias
+
+1 - A capacidade de uma máquina em simular a inteligência humana.
+
+2 - A capacidade de uma máquina em aprender.
+
+3 - Um campo de estudo da Ciencia da Computação.
+
+Tipos de Inteligência Artificial 
+
+1 - IA Fraca: Simula a inteligência humana,mas não é inteligente de fato. Essa IA é as utilizadas nos dias atuais,por que não representa risco a raça humana .
+
+2 - IA forte ou IA Geral: Essa seria um expectativa para o futuro da IA,ela tem a capacidade de pensa por si só,consegue resolve problemas equivalentes ou até superior aos humanos e tem uma visão toltamente ampla do mundo que conhecemos,sem contar que a ia forte tem o poder de imaginação e de tomada de decisões .
+
+3 - Super IA: Essa seria a IA mais poderosas de todas,ela superaria em todos os aspectos a inteligência humana,ela conseguria envoluir por vontade propria em uma velocidade inimaginavel,sendo capaz de aprender novas coisas em uma velocidade incomparavel,essa IA seria a mais poderosa,mas também seria a mais perigosa,esse conceito de Super IA levanta questões etica e morais.
+
+Onde se aplica a Inteligencia Artificial ? 
+
+1 - No reconhecimento de padrões simples e complexos (mais utilizada)
+
+2 - Na classificação de variáveis diversas.
+
+3 - Em previsões futuras 
+
+
+Machine Learning
+
+1 - O machine learning é uma subárea da Inteligência Artificial que se utiliza regras e calculos mátematicos para reconhecer padrões ou utiliza em previsões 
+
+2 - o Machine Learning pode ser dividio em duas subárea: Machine Learning clássico e o Deep Learning,{
+    1 - Machine Learning Clássico esse termo é utilizado para deriva o aprendizado de maquina com práticas mais antigas e tradicionais,antes do surgimento de praticas mais recentes e modernas que é o deep learning,o machine learning é indicado para quantidades menores de dados.
+
+
+
+    2 - Deep Leaning (Aprendizado Profundo): é uma subárea do Machine Leaning que se concetra em treinamento de rede neural em tarefas mais complexas e com mais demandas,o termo 'profundo' vem de camadas que muitas vezes as redes neurais utilizando esse método tem muitas camadas, o deep learning é indicado para grandes quantidades de dados ou Big Data.
+}
+
+Alguns Conceitos do Machine Learning
+
+1 - Uitliza uma fórmula de matématica convencional 
+
+2 - Faz cálculos estatísticos e probalilísticos.
+
+3 - Não simula as reações do cérebro humano,mas podemos fazer um conjunto de redes neurais simples e 'simula' em partes.Tendo no máximo uma unica camada de interação que é os dados de input e output 
+
+4 - Não possui camadas de interação
+
+Alguns Conceitos de Deep Leaning 
+
+1 - É um tipo de Machine Leaning.
+
+2 - Simula as reações do cérebro humano.
+
+3 - Possui camadas de interação.
+
+Os três princiapis grupos de aprendizado do machine learning 
+
+1 - classificação: quando sabemos quais dados serão classificados.
+
+2 - Clusterização: quando não sabemos quais dados serão classificados 
+
+3 - Regressão: quando queremos PREVER dados futuros através de históricos passados.

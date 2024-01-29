@@ -1,0 +1,45 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Register Page</title>
+</head>
+<body>
+    <div class="msg"></div>
+    <main>
+        
+        <form class="form__msg">
+            <div>
+                <label for="username">username</label>
+                <input type="text" placeholder="username" id="username" class="input">
+            </div>
+            <div>
+                <label for="e-mail">E-mail</label>
+                <input type="text" placeholder="Seu e-mail" id="e-mail" class="input">
+            </div>
+            <div>
+                <label for="pass"> password</label>
+                <div class="div__input">
+                    <input type="password" id="pass" placeholder="sua senha" class="input">
+                    <span class="material-symbols-outlined" id="on">visibility</span>
+                    <span class="material-symbols-outlined" id="off">visibility_off</span>
+                </div>
+            </div>
+            <div>
+                <label for="confirmpass"> Confirme sua senha </label>
+                <input type="password" id="confirmpass" placeholder="confirme sua senha" class="input">
+            </div>
+            <div class="div__token">
+                <input type="text" placeholder="Digite o token no seu e-mail" class="input-token">
+            </div>
+            <button>Registra</button>
+        </form>
+    </main>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
