@@ -14,7 +14,7 @@ require('dotenv').config();
 const SECRET = process.env.SECRET;
 
 const Conectados = []
-
+// muda essa função para fazer algo útil 
 const GetUsers = async (request, response) => {
     try {
         return response.status(200).json(request.user);
@@ -75,7 +75,7 @@ const LoginUser = async (request, response) => {
     })
         .catch(e => response.json(e));
 }
-const ValidationTokenLogin = (request, response, next) => {
+const ValidationToken = (request, response, next) => {
     const tokenHeader = request.header('Authorization');
 
     if (!tokenHeader) return response.status(403).json({ messagem: 'Acesso Negado' });
@@ -91,23 +91,7 @@ const ValidationTokenLogin = (request, response, next) => {
     // parei na parte de validação do token e parei na aula 57:18
 };
 // muda a função validationTokenLogin e utiliza-la para valida os token de registro e de login 
-const ValidationTokenRegister = (request, response, next) => {
-    const tokenHeader = request.header('Authorization');
 
-    if (!tokenHeader) return response.status(403).json({ messagem: 'Token Invalido' });
-
-    jwt.verify(tokenHeader, SECRET, async (err, user) => {
-        if (err) {
-            console.log(err);
-
-            return response.status(403).json({ messagem: 'Token Invalido' });
-        }
-
-        request.user = user;
-
-        next();
-    })
-}
 const createUser = async (request, response) => {
     try {
         const { username, email, password } = request.user;
@@ -153,7 +137,8 @@ const TokenRecover = async (request, response) => {
 
         if (UserEmail === null) return response.status(404).json({ messagem: 'Esse Usuario não existe' });
 
-        if (email === UserEmail.email && username !== UserEmail.username) return response.status(404).json({ messagem: 'Nome de usuario ou email estão incorretos' })
+        if (email === UserEmail.email && username !== UserEmail.username) return response.status(404).json({ messagem: 'Nome de usuario ou email estão incorretos' });
+
         const token = await CreateToken(request.body, SECRET);
 
         const Email = await TransportEmail(email, username, token, 'redefinição');
@@ -162,33 +147,47 @@ const TokenRecover = async (request, response) => {
     }
     catch (e) {
         console.log(e)
-        return response.status(400).json({ messagem: 'Erro no servidor tente novamente mais tarde ' })
+        return response.status(400).json({ messagem: 'Erro no servidor,tente novamente mais tarde ' })
     }
 }
-const RecoverPassword = (request, response, next) => {
-    const tokenHeader = request.header('Authorization');
-    if (!tokenHeader) return response.status(403).json({ messagem: 'Acesso negado' });
-    jwt.verify(tokenHeader, SECRET, async (err, user) => {
-        if (err) return response.status(404).json({ messagem: 'Token invalido' });
-        request.user = user 
-        
-        const Username = await Model.findOne({ username: request.user.username });
+const verifyPassword = (req,res,next) => {
+    const {pass,confirmpass} = req.body;
 
-        const newPassword = await HashPassword(request.body.newPass);
+    if (!pass || pass.length < 8) return res.json({messagem: 'sua senha precisa ter no minimo oito caracteres'});
+    
+    if (pass !== confirmpass) return res.json({messagem: 'Suas senha não batem'});
+    next();
+}
+const RecoverPassword = async (request,response) => {
+    try {
+        const {email} = request.user;
 
-        Username.password = newPassword;
-        return response.json(Username)
-    })
+        const {pass} = request.body;
+
+        const UserEmail = await Model.findOne({ email: email });
+
+        const Hash = await HashPassword(pass);
+
+        UserEmail.password = Hash;
+
+        await UserEmail.save();
+
+        return response.status(200).json({messagem: 'Sua senha foi alterada'});
+    }
+    catch(e) {
+        console.log(e);
+        return response.status(400).json({messagem: 'Erro no servidor,tente novamente mais tarde'});
+    }
 }
 module.exports = {
     GetUsers,
     SendEmail,
     LoginUser,
-    ValidationTokenLogin,
-    ValidationTokenRegister,
+    ValidationToken,
     createUser,
     VerifyConnect,
     Desconnect,
     TokenRecover,
+    verifyPassword,
     RecoverPassword
 };

@@ -9,7 +9,7 @@ const Msg = document.querySelector('.msg');
 const FormSubmit = async event => {
     event.preventDefault();
 
-    const data = await fetch('http://localhost:8080/register',{
+    const data = await fetch('http://localhost:8080/sendemail',{
         headers: {"Content-Type": 'application/json'},
 
         method: "POST",
@@ -56,14 +56,15 @@ inputToken.addEventListener('input',async () => {
         "Content-Type": 'application/json',
         "Authorization": token
     })
-    const data = await fetch('http://localhost:8080/token',{
+    const data = await fetch('http://localhost:8080/register',{
         headers: headers,
         method: 'POST'
     });
     const {messagem} = await data.json();
-    if (messagem === 'Token Invalido') Msg.textContent = messagem;
+    if (messagem === 'Token Invalido' || messagem === 'Acesso Negado') Msg.textContent = messagem;
     else {
-        
-        window.location.href = '../login/index.html';
+       setTimeout(() =>  window.location.href = '../login/index.html',1500)
+       Msg.textContent = 'Usuario criado com sucesso';
     }
+    
 })

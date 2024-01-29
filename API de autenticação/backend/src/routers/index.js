@@ -4,28 +4,28 @@ const {
     GetUsers,
     SendEmail,
     LoginUser,
-    ValidationTokenLogin,
-    ValidationTokenRegister,
+    ValidationToken,
     createUser,
     VerifyConnect,
     Desconnect,
     TokenRecover,
+    verifyPassword,
     RecoverPassword
 } = require('../controllers/index');
 
-router.get('/users',ValidationTokenLogin,GetUsers);
+router.get('/users',ValidationToken,GetUsers);
+
+router.put('/recover',ValidationToken,verifyPassword,RecoverPassword);
 
 router.post('/verify',VerifyConnect);
 
-router.post("/register",SendEmail);
+router.post("/sendemail",SendEmail);
 
-router.post('/token',ValidationTokenRegister,createUser);
+router.post('/register',ValidationToken,createUser);
 
 router.post('/login',LoginUser);
 
 router.post('/tokenrecover',TokenRecover);
-
-router.put('/recover',RecoverPassword);
 
 router.delete('/desconnect',Desconnect);
 

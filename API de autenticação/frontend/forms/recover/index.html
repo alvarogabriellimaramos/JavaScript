@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+       
+    </style>
     <title>Recuperar Senha</title>
 </head>
 <body>
@@ -23,6 +26,17 @@
         <form style="display:none;">
             <input type="text" placeholder="Token" id="token">
             <button>envia token</button>
+        </form>
+        <form style="display:none;">
+            <div>
+                <label for="password">password</label>
+                <input type="password" placeholder="nova senha" id="password">
+            </div>
+            <div>
+                <label for="confirmpass">Confirme sua senha </label>
+                <input type="password" placeholder="digite novamente" id="confirmpass">
+            </div>
+            <button> Atualizar </button>
         </form>
     </main>
     <script src="index.js">
