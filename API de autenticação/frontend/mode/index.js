@@ -5,9 +5,9 @@ export default function Mode() {
     light.addEventListener('click',LightMode)
 }
 function DarkMode() {
-    document.body.style.background = '#1a1833';
+    document.body.style.background = '#340f14';
     dark.style.display = 'none';
-    localStorage.dark = true;
+    sessionStorage.dark = true;
     document.body.style.color = 'white'
     light.style.display = 'block'
 }
@@ -15,10 +15,10 @@ function LightMode() {
     document.body.style.background = '#ffd9f4'
     light.style.display = 'none';
     document.body.style.color = 'black';
-    localStorage.dark = false 
+    sessionStorage.dark = false 
     dark.style.display = 'block';
 }
 window.onload = function() {
-    if (localStorage.dark === 'true') DarkMode();
-    if (localStorage.dark === 'false') LightMode()
+    if (sessionStorage.dark === 'true') DarkMode();
+    if (sessionStorage.dark === 'false') LightMode()
 }
